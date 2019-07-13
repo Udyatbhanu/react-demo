@@ -1,8 +1,20 @@
 import React, { Component } from "react";
 
+import ElementOne from "./body-elements/ElementOne";
+import ElementTwo from "./body-elements/ElementTwo";
+import TableComponent from "./body-elements/TableComponent";
+
 class Body extends Component {
   render() {
-    return <div>This is a body</div>;
+    return (
+      <React.Fragment>
+        <div className="container">
+          <ElementOne />
+          <TableComponent />
+          <ElementTwo />
+        </div>
+      </React.Fragment>
+    );
   }
 }
 
